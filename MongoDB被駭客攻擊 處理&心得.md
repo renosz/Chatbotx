@@ -1,4 +1,15 @@
-<h1 id="mongodb-was-attacked-first-in-my-life">MongoDB was attacked first in my life</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB被駭客攻擊 處理&amp;心得</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="mongodb-was-attacked-first-in-my-life">MongoDB was attacked first in my life</h1>
 <h2 id="緣由">緣由</h2>
 <blockquote>
 <p><em>人生第一次真的被駭客攻擊，真的需要好好紀錄一下</em></p>
@@ -176,4 +187,7 @@ TAR_BAK<span class="token operator">=</span><span class="token string">"mongod_b
 <span class="token function">tar</span> -zcvf <span class="token variable">$TAR_DIR</span>/<span class="token variable">$TAR_BAK</span> <span class="token variable">$OUT_DIR</span>/<span class="token variable">$DATE</span>       // 将备份文件打包放入正式目录
 <span class="token function">find</span> <span class="token variable">$TAR_DIR</span>/ -mtime +<span class="token variable">$DAYS</span> -delete             // 删除14天前的旧备份
 </code></pre>
+</div>
+</body>
 
+</html>
