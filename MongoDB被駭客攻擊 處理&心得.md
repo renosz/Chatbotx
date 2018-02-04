@@ -86,7 +86,7 @@ db.createUser(
 mongo --port 27017 -u "myUserAdmin" -p "abc123" --authenticationDatabase "admin"
 ```
 或是先連上Mongod再進行驗證
-```js
+```javascript
 $ mongo
 > use admin
 > db.auth("myUserAdmin", "abc123" )
@@ -122,7 +122,7 @@ $ mongorestore -h localhost -d admin -u myUserAdmin -p abc123 --authenticationDa
 })
 ```
 2.  到nodejs設定連接MongoDB的地方
-```git
+```github
 - mongoose.connection.openUri('mongodb://localhost/test');
 + mongoose.connection.openUri('mongodb://node:node@localhost/admin');
 ```
