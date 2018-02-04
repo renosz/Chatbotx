@@ -68,6 +68,7 @@ db.createUser(
 ```
 其中`DBowner` 為Super User，[官方文件](https://docs.mongodb.com/manual/reference/built-in-roles/#superuser-roles)上說明可以授權(auth)任何user到任何DB，包括自己。
 ~所以我覺得這會是一個後患，但修復要緊~
+
 3.  重啟Mongod
 `mongod --auth` or `sudo service mongod restart`
 > NOTE:
